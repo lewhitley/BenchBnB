@@ -18,9 +18,9 @@ export const signup = user => ({
   user
 });
 
-export const receiveCurrentUser = currentUser => ({
+export const receiveCurrentUser = user => ({
   type: "RECEIVE_CURRENT_USER",
-  currentUser
+  user
 });
 
 export const receiveErrors = errors => ({
