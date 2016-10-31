@@ -15,7 +15,6 @@ class SessionForm extends React.Component {
 
   componentDidUpdate() {
     this.redirectIfLoggedIn();
-    this.header();
   }
 
   redirectIfLoggedIn() {
@@ -44,7 +43,6 @@ class SessionForm extends React.Component {
     return (
       <header>
         Welcome to BenchBnB! Please {this.props.formType } below.
-        &nbsp
         Otherwise, { this.linked() }
       </header>
     );
