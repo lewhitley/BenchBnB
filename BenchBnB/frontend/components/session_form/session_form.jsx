@@ -43,6 +43,7 @@ class SessionForm extends React.Component {
     return (
       <header>
         Welcome to BenchBnB! Please {this.props.formType } below.
+        <br />
         Otherwise, { this.linked() }
       </header>
     );
@@ -73,9 +74,11 @@ class SessionForm extends React.Component {
           <input type='text' value={this.state.username}
             placeholder='Username'
             onChange={this.update("username")}></input>
+          <br />
           <input type='password' value={this.state.password}
             placeholder='Password'
             onChange={this.update("password")}></input>
+          <br />
           <button onClick={this.handleSubmit}>Submit</button>
         </form>
       </div>
